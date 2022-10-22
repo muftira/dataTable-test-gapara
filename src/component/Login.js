@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginApi } from "../utils/Axios";
+import Logo from "../img/GardaPaksiNusantara.jpg";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -26,7 +27,10 @@ function Login() {
   }, []);
 
   return (
-    <div className="w-screen h-[calc(100vh-64px)] flex justify-center items-center">
+    <div className="w-screen h-[calc(100vh-64px)] flex flex-col justify-center items-center">
+      <div>
+        <img src={Logo} alt="" />
+      </div>
       <div className="h-[300px] sm:w-[400px]  w-[300px] flex flex-col justify-center  border-2 border-neutral-300 shadow-2xl rounded-2xl p-6">
         <p className="sm:w-[400px] flex justify-center font-bold text-xl sm:ml-[-24px] ml-0">
           Admin Petugas
