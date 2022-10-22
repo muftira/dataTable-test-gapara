@@ -30,7 +30,7 @@ function Home() {
   return (
     <div className="w-full h-screen flex flex-col justify-start items-center ">
       <div className="w-full flex justify-evenly items-center  my-10">
-        <p className="font-bold text-4xl">PROFIL</p>
+        <p className="font-bold sm:text-3xl text-md">PROFIL</p>
         <button
           onClick={(e) => logOut(e)}
           className="w-20 h-8 bg-blue-600 text-white font-bold active:bg-blue-400 rounded-md"
@@ -39,22 +39,22 @@ function Home() {
         </button>
       </div>
 
-      <div className="w-full flex justify-center items-center space-x-4">
-        <div className="w-[30%] h-[200px] border-2 border-neutral-500 rounded-md flex justify-center items-center">
-          <div className="w-[100px] h-[100px] border-2 rounded-md mr-2 overflow-hidden">
+      <div className="sm:w-full sm:flex sm:flex-row flex-col justify-center items-center sm:space-x-4 space-y-4 sm:space-y-0">
+        <div className="p-4  border-2 border-neutral-500 rounded-md flex justify-center items-center">
+          <div className="sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] border-2 rounded-md mr-2 overflow-hidden">
             <img src={user && user[0].adminpetugasfoto} alt="" />
           </div>
-          <div className="text-left">
+          <div className="text-left sm:text-base text-xs">
             <p>Jabatan : {user && user[0].adminpetugasjabatan}</p>
             <p>Kode : {user && user[0].adminpetugaskode}</p>
             <p>Nama Lengkap : {user && user[0].adminpetugasnamalengkap}</p>
           </div>
         </div>
-        <div className="w-[30%] h-[200px] border-2 border-neutral-500 rounded-md flex justify-center items-center">
-          <div className="w-[100px] h-[100px] border-2 rounded-md mr-2 overflow-hidden">
+        <div className="p-4 border-2 border-neutral-500 rounded-md flex justify-center items-center ">
+          <div className="sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] border-2 rounded-md mr-2 overflow-hidden">
             <img src={user && user[0].adminpetugasperusahaanfoto} alt="" />
           </div>
-          <div className="text-left">
+          <div className="text-left sm:text-base text-xs">
             <p>
               Kode Perusahaan : {user && user[0].adminpetugasperusahaankode}
             </p>

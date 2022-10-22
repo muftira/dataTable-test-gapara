@@ -34,14 +34,14 @@ function Login() {
         <form className="flex flex-col items-start">
           <p className="text-sm mb-1 mt-4">Username</p>
           <input
-            className="ring-2 ring-neutral-400 rounded-md px-1 py-1 sm:w-[350px] w-[250px] text-sm"
+            className="border-2 border-neutral-400 ring-neutral-400 rounded-md px-1 py-1 sm:w-[350px] w-[250px] text-sm"
             type="email"
             onChange={(e) => setUserName(e.target.value)}
             required
           />
           <p className="text-sm mb-1 mt-4 ">Password</p>
           <input
-            className="ring-2 ring-neutral-400 rounded-md px-1 py-1 sm:w-[350px] w-[250px] text-sm"
+            className="border-2 border-neutral-400 rounded-md px-1 py-1 sm:w-[350px] w-[250px] text-sm"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             required
